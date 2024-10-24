@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 85%;
+          border: 2px solid brown;
+        }
+  
+        .box {
+          flex: 0 0 400px;
+          height: 200px;
+          background-color: rgb(239, 208, 162);
+          margin: 5px;
+          font-size: xx-large;
+          color: brown;
+          box-sizing: border-box;
+          padding: 2px;
+          margin: 2px;
+          font-size: medium;
+        }
+        button {
+          background-color: brown;
+          color: rgb(239, 208, 162);
+          font-size: larger;
+        }
+        h1 {
+          width: 100%;
+          background-color: #990000;
+          color: burlywood;
+          text-align: center;
+          font-size: xx-large;
+        }
+        img {
+        width: 17%;
+        }
+      </style>
+    <script src="./lib/jquery-3.7.1.js"></script>
+    <script src="chocolate.js"></script>
+</head>
+<body>
+  <h1>Chocolate</h1>
+  <p>
+    <button type="button" onclick="toggleAnswers()">Calories/Content</button>
+    <button type="button" onclick="highlightRandomChocolate()">
+      Pick Random Free Sample Chocolate
+    </button>
+  </p>
+  <div class="wrapper">
+    <div class="box">
+      
+      <p class="chocolate">
+        Plain Milk
+      </p>
+      <img src="assets/plain_milk.jpg">
+      <p class="content"> 110 calories, smooth milk chocolate, ingredients: cocoa butter, milk, sugar</p>
+    </div>
+    <div class="box">
+      
+      <p class="chocolate">Plain Dark</p>
+      <img src="assets/plain_dark.jpg">
+      <p class="content">100 calories, smooth dark chocolate, ingredients: cocoa butter, milk, sugar</p>
+    </div>
+    <div class="box">
+    
+      <p class="chocolate">Plain Hybrid</p>
+      <img src="assets/plain_hybrid.jpg">
+      <p class="content">105 calories, smooth milk chocolate and dark chocolate side by side, ingredients: cocoa butter, milk, sugar</p>
+    </div>
+    <div class="box">
+    
+      <p class="chocolate">Nutter Butter</p>
+      <img src="assets/nutter_butter.jpg">
+      <p class="content">190 calories, dark Chocolate with peanut butter, ingredients: cocoa butter, milk, cream, peanut butter</p>
+    </div>
+    <div class="box">
+    
+      <p class="chocolate">Bailey's Cup</p>
+      <img src="assets/baileys_cup.jpg">
+      <p class="content">90 calories, smooth milkchocolate with Bailey's Irish Cream filling, ingredients: cocoa butter, milk, sugar, Bailey's Cream filling</p>
+    </div>
+    <div class="box">
+      
+      <p class="chocolate">Rum Barrel</p>
+      <img src="assets/rum_barrel.jpg">
+      <p class="content">110 calories, smooth dark chocolate with rum-coconut filling, ingredients: cocoa butter, milk, sugar, rum, coconut</p>
+    </div>
+    <div class="box">
+      
+      <p class="chocolate">Orange Fondant</p>
+      <img src="assets/orange_fondant.jpg">
+      <p class="content">125 calories, dark chocolate with orange fondant filling, ingredients: cocoa butter, milk, sugar, orange cream, orange zest</p>
+    </div>
+    <div class="box">
+      
+      <p class="chocolate">Cappuccino Cup</p>
+      <img src="assets/cappuccino_cup.jpg">
+      <p class="content">130 calories, dark chocolate with coffee cream filling, ingredients: cocoa butter, milk, sugar, coffee-vanilla cream, grated coffee beans</p>
+    </div>
+    <div class="box">
+      
+      <p class="chocolate">Pistachio Diamond </p>
+      <img src="assets/pistachio_diamond.jpg">
+      <p class="content">140 calories, milk chocolate, almond butter filling, large pistachio, filling: cocoa butter, milk, sugar, nut butter, pistachio</p>
+    </div>
+    <div class="box">
+      <p class="chocolate">Toffee Crunch</p>
+      <img src="assets/toffee_crunch.jpg">
+      <p class="content">130 calories, dark chocolate, soft toffee filling, rock salt and peanut brittle, ingredients: cocoa butter, milk, sugar, toffee, salt, toffee brittle</p>
+  </div>
+    
+</body>
+</html>
